@@ -1,0 +1,65 @@
+{
+    "age": "age in years",
+    "sex": "(1 = male; 0 = female)",
+    "cp": {
+        "description": "chest pain type",
+        "values": {
+            "0": "Typical angina: chest pain related to decreased blood supply to the heart",
+            "1": "Atypical angina: chest pain not related to heart",
+            "2": "Non-anginal pain: typically esophageal spasms (non-heart related)",
+            "3": "Asymptomatic: chest pain not showing signs of disease"
+        }
+    },
+    "trestbps": {
+        "description": "resting blood pressure (in mm Hg on admission to the hospital)",
+        "note": "Anything above 130-140 is typically cause for concern"
+    },
+    "chol": {
+        "description": "serum cholesterol in mg/dl",
+        "note": "serum = LDL + HDL + 0.2 * triglycerides. Above 200 is cause for concern"
+    },
+    "fbs": {
+        "description": "(fasting blood sugar > 120 mg/dl)",
+        "values": "1 = true; 0 = false",
+        "note": "'>126' mg/dL signals diabetes"
+    },
+    "restecg": {
+        "description": "resting electrocardiographic results",
+        "values": {
+            "0": "Nothing to note",
+            "1": "ST-T Wave abnormality (can range from mild symptoms to severe problems, signals non-normal heartbeat)",
+            "2": "Possible or definite left ventricular hypertrophy (Enlarged heart's main pumping chamber)"
+        }
+    },
+    "thalach": "maximum heart rate achieved",
+    "exang": "(exercise induced angina) 1 = yes; 0 = no",
+    "oldpeak": {
+        "description": "ST depression induced by exercise relative to rest",
+        "note": "Looks at stress of heart during exercise. Unhealthy heart will stress more"
+    },
+    "slope": {
+        "description": "the slope of the peak exercise ST segment",
+        "values": {
+            "0": "Upsloping: better heart rate with exercise (uncommon)",
+            "1": "Flatsloping: minimal change (typical healthy heart)",
+            "2": "Downsloping: signs of unhealthy heart"
+        }
+    },
+    "ca": {
+        "description": "number of major vessels (0-3) colored by fluoroscopy",
+        "note": "Colored vessel means the doctor can see the blood passing through. The more blood movement the better (no clots)"
+    },
+    "thal": {
+        "description": "thalium stress result",
+        "values": {
+            "1": "Normal",
+            "3": "Normal",
+            "6": "Fixed defect: used to be defect but ok now",
+            "7": "Reversable defect: no proper blood movement when exercising"
+        }
+    },
+    "target": {
+        "description": "Have disease or not (1 = yes, 0 = no)",
+        "note": "This is the predicted attribute"
+    }
+}
